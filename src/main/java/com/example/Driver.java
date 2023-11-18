@@ -17,7 +17,6 @@ public class Driver {
         String path = "/home/will/project1/javaworld/yelpSpark/yelp_dataset/yelp_academic_dataset_review.json";
         Dataset<Row> jsonData = spark.read().json(path);
 
-
         /* only load first 100 rows to save cpu and memory */
         int numRowToLoad = 1000;
         Dataset<Row> limitedJsonData = jsonData.limit(numRowToLoad);
@@ -50,6 +49,6 @@ public class Driver {
          */
 
         System.out.println("+++++++++++++++++average values in the first row: " + groupedJsonData.first().getDouble(1));
-
+        System.out.println("+++++++++++++++++average values in the first row: " + groupedJsonData.first().getDouble(1));
     }
 }
