@@ -49,6 +49,6 @@ public class Driver {
          */
 
         System.out.println("+++++++++++++++++average values in the first row: " + groupedJsonData.first().getDouble(1));
-    
+     System.out.println("+++++++++++++++++average values in the first row: " + groupedJsonData.first().getDouble(1));
     }
 }
