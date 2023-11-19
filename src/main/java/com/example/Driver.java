@@ -13,6 +13,7 @@ public class Driver {
                 .master("local[*]")
                 .getOrCreate();
 
+                
         // Path to the Yelp dataset Reveiws.JSON, and business.json
         String path_reviews = "/home/will/project1/javaworld/yelpSpark/yelp_dataset/yelp_academic_dataset_review.json";
         String path_business = "/home/will/project1/javaworld/yelpSpark/yelp_dataset/yelp_academic_dataset_business.json";
